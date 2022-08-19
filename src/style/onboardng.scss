@@ -1,0 +1,57 @@
+@import "./general.scss";
+.onboardng-container {
+  user-select: none;
+  .header {
+    .logo {
+      width: 2rem;
+    }
+  }
+  .stepper {
+    .each-step {
+      .each-step-count {
+        background-color: transparent;
+        color:$primary;
+        width: 40px;
+        height: 40px;
+        border: 1px solid lightgray;
+      }
+      
+    }
+    .each-step.each-step-active {
+      .each-step-count {
+        background-color: $primary;
+        color: $color-white;
+      }
+      .progress {
+        .progress-bar {
+          background-color: $primary;
+          border: 1px solid $primary;
+        }
+      }
+    }
+  }
+  .card{
+    .card-body{
+      .person-icon{
+        width: 30px;
+        color: lightgray;
+      }
+    }
+  }
+  .card.card-active{
+    border-color: $primary;
+    .card-body{
+      .person-icon{
+       
+        color:  $primary;
+      }
+    }
+  }
+  .submit-button{
+    background-color: $primary;
+    color: $color-white;
+    &:hover {
+      background-color: $primary;
+  }
+  }
+}
